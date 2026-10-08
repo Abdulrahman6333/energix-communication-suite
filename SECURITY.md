@@ -1,12 +1,14 @@
 # Security & Privacy
 
-This repository must not contain:
-- Real phone numbers or recipient lists
-- Personal email addresses from customer datasets
-- Email passwords or app passwords
-- WhatsApp session/authentication data
-- API keys or tokens
-- Private certificates or PDFs
-- Customer/student spreadsheets
+This is a public portfolio repository.
 
-Only synthetic demo data should be used in the public portfolio version.
+Never commit:
+- Real phone numbers or recipient lists
+- Real customer/student email datasets
+- SMTP passwords or email app passwords
+- WhatsApp/Chrome authentication profiles or sessions
+- API keys, tokens, cookies, or credentials
+- Private PDFs, certificates, or Excel files
+- Personal workstation paths
+
+The public application deliberately does not persist email app passwords.

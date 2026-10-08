@@ -1,39 +1,48 @@
 # Energix Communication Automation Suite
 
-A desktop business-communication application designed to simplify repetitive messaging, email, certificate, and PDF distribution workflows using Excel-based recipient data.
+A Python desktop application for automating repetitive communication workflows from Excel-based recipient data.
 
-## Main modules
-- WhatsApp messaging
-- Email communication
-- Certificate generation
-- PDF attachment and distribution workflows
+## Portfolio Edition
+This public repository is sanitized. It contains no real recipient lists, phone numbers, email addresses, credentials, WhatsApp session data, or private documents.
 
-## WhatsApp workflow
-The application supports:
-- Excel recipient import
-- Configurable name and phone columns
-- Personalized message templates
-- Reusable message content
+## Core Features
+
+### WhatsApp Automation
+- Bulk messaging from Excel
+- Phone-number normalization
+- Multi-line message support
+- WhatsApp Web automation with Selenium
 - Optional PDF attachments
-- Per-recipient PDF paths from Excel
-- Default PDF attachment support
+- Reusable message templates
 
-## Business value
-The project is designed for training centers, academic teams, small businesses, and other organizations that need to communicate with many recipients while keeping messages and documents personalized.
+### Email Automation
+- Bulk personalized email sending
+- Excel-driven recipient fields
+- Custom subject and message templates
+- Optional certificate attachment
+- SMTP-based delivery
+- Email app passwords are entered at runtime and are never persisted by the public build
 
-## Portfolio status
-The public repository is being prepared as a sanitized portfolio edition. Real phone numbers, email addresses, credentials, session data, customer lists, and private documents are intentionally excluded.
+### Certificate Automation
+- Generate certificates from an image template and Excel names
+- Arabic/RTL name support
+- Preview before batch generation
+- Adjustable font size and name position
+- PDF output
 
-## Planned repository structure
+### Enhanced WhatsApp Prototype
+The second source file demonstrates a newer WhatsApp workflow with Excel/CSV support, configurable delay, optional persistent Chrome profile, per-recipient/default PDF paths, and a runtime log panel.
+
+## Tech Stack
+Python • Tkinter • Pandas • Selenium • Pillow • SMTP • OpenPyXL • Requests • Arabic Reshaper • Python Bidi
+
+## Run
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python src/energix_suite.py
 ```
-energix-communication-suite/
-├── README.md
-├── SECURITY.md
-├── screenshots/
-├── src/
-├── requirements.txt
-└── .gitignore
-```
 
-## Security
-Never store live messaging credentials, email passwords, WhatsApp session data, customer information, or real recipient spreadsheets in a public repository.
+## Privacy
+Use only synthetic/demo data in this public repository. Never commit SMTP passwords, WhatsApp/Chrome profiles, real spreadsheets, generated certificates, or customer/student data.
